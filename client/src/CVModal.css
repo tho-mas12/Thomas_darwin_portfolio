@@ -1,0 +1,249 @@
+/* CV Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+
+.modal-close:hover {
+  transform: scale(1.2);
+}
+
+/* CV Modal Specific */
+.cv-modal {
+  width: 100%;
+  max-width: 900px;
+}
+
+.cv-container {
+  width: 100%;
+  min-height: 600px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cv-modal-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cv-modal-header h2 {
+  font-size: 24px;
+  margin: 0 0 6px;
+  color: #1a1a1a;
+}
+
+.cv-modal-header p {
+  margin: 0;
+  color: #555;
+}
+
+.cv-pdf-embed {
+  width: 100%;
+  min-height: 560px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.cv-fallback {
+  width: 100%;
+  text-align: center;
+  color: #444;
+}
+
+.cv-fallback p {
+  margin-bottom: 12px;
+}
+
+/* CV HTML Content Styles */
+.cv-html-content {
+  padding: 40px 60px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.cv-html-content h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.cv-section {
+  margin-bottom: 25px;
+}
+
+.cv-section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+.cv-item {
+  margin-bottom: 15px;
+}
+
+.cv-item h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.duration {
+  color: #666;
+  font-size: 13px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.cv-section ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.cv-section li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* CV Actions */
+.cv-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 20px 40px;
+  border-top: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.cv-actions .button {
+  padding: 10px 24px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 95vw;
+    max-height: 95vh;
+    border-radius: 8px;
+  }
+
+  .cv-container {
+    padding: 20px;
+  }
+
+  .cv-html-content {
+    padding: 20px;
+  }
+
+  .cv-actions {
+    padding: 15px 20px;
+  }
+
+  .modal-close {
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-overlay {
+    padding: 10px;
+  }
+
+  .cv-container {
+    padding: 15px;
+  }
+
+  .cv-html-content {
+    padding: 15px;
+  }
+
+  .cv-html-content h1 {
+    font-size: 22px;
+  }
+
+  .cv-section h2 {
+    font-size: 16px;
+  }
+
+  .cv-actions {
+    flex-direction: column;
+  }
+
+  .cv-actions .button {
+    width: 100%;
+  }
+}
