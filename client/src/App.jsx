@@ -29,10 +29,11 @@ const projects = [
       'A web-based Sports Day Registration System for managing student registrations and sports events..',
   },
    {
-    title: 'FrontierWox Tech Intern',
+    title: 'FrontierWox Tech Intern Management System',
     image: '/frontier.png',
     description:
-      'FrontierWoxSync is a full-stack internship management system developed using React.js, FastAPI, and MongoDB for managing interns, attendance, tasks, meetings, and team collaboration with role-based access.'  },
+      'FrontierWoxSync is a full-stack internship management system developed using React.js, FastAPI, and MongoDB for managing interns, attendance, tasks, meetings, and team collaboration with role-based access.' 
+     },
 ]
 
 const gallery = [
