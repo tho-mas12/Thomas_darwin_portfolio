@@ -4,153 +4,80 @@ function ProjectDetailModal({ isOpen, onClose, project }) {
   if (!isOpen || !project) return null
 
   const projectDetails = {
-    Portfolio: {
-      image: '/pro-1.png',
-      description: 'Designed a responsive portfolio page using HTML, CSS and React.js with a clean and attractive layout.',
-      fullDescription: `This is my personal portfolio website showcasing my skills, projects, and experience as a Fullstack Developer.
-
-The portfolio features:
-- Responsive design that works on all devices
-- Smooth scrolling navigation
-- Project showcase with detailed descriptions
-- Work experience timeline
-- Skills and certification display
-- Contact form with email integration
-- Modern UI with clean aesthetics
-
-Technologies Used:
-- HTML for semantic structure
-- CSS for styling and animations
-- JavaScript for interactivity
-- React.js for component-based architecture
-- Bootstrap for responsive grid system`,
-      technologies: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Bootstrap', 'Git/GitHub', 'Vercel'],
-      duration: '2 weeks',
-      role: 'Full Stack Developer',
-      challenges: 'Implementing responsive design across multiple screen sizes, smooth scrolling effects',
-      lessons: 'Learned modern web design principles and user experience best practices',
-      github: 'https://github.com/tho-mas12',
-    },
-    'Hostel Leave Management': {
-      image: '/leave-1.png',
-      description: 'Developed a Hostel Leave Management System using Frontend, Python and SQL Database to streamline the leave application process.',
-      fullDescription: `A comprehensive system designed to manage hostel leave applications and approvals efficiently.
-
+    'JIM Hostel management System': {
+      image: '/JIM_project.png',
+      description: 'Designed and developed a web-based system to streamline hostel attendance and room occupied details. Features include student attendance report, director management workflow, and basic data administration.',
+      fullDescription: `A comprehensive web application designed to digitize and automate hostel operations, attendance, and leave management processes.
+      
 Features:
-- Student leave application form
-- Leave status tracking
-- Admin dashboard for approval
-- Leave history records
-- Email notifications
-- Responsive design for mobile and desktop
-
-This project helped me understand:
-- Form validation and data handling
-- User authentication concepts
-- Database integration basics
-- Admin panel development`,
+- Student login & leave request submission
+- Interactive occupancy records & hostel room tracking
+- Director/Warden workflow for approvals & attendance analysis
+- Basic data administration panel
+- Deployed on Render with a robust backend and relational database`,
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'SQL Database', 'Bootstrap', 'Git/GitHub', 'Render'],
       duration: '3 weeks',
       role: 'Full Stack Developer',
-      challenges: 'Implementing approval workflow, ensuring data security',
-      lessons: 'Gained knowledge in database management and backend server development',
+      challenges: 'Formulating a robust approval workflow and establishing a secure database connection for storing dynamic student records.',
+      lessons: 'Gained hands-on experience in managing relational databases, backend routing, and designing secure admin roles.',
       github: 'https://github.com/tho-mas12',
     },
-    WMPDS: {
-      image: '/wmpd-1.png',
-      description: 'Connect Wholesalers & Merchants, manage inventory, and distribute products with an intuitive interface.',
-      fullDescription: `Wholesale & Merchant Product Distribution System - A B2B platform connecting wholesalers with merchants.
-
-Key Features:
-- Product catalog management
-- Inventory tracking system
-- Order management
-- Payment integration
-- User authentication
-- Dashboard analytics
-
-Platform Benefits:
-- Streamlines supply chain
-- Real-time inventory updates
-- Easy product discovery
-- Secure transactions
-- Merchant and Wholesaler roles
-
-Technologies & Architecture:
-- Frontend: React.js with responsive design
-- Backend: Node.js with Express
-- Database: MongoDB for product and order data
-- Authentication: JWT tokens`,
-      technologies: ['Python', 'HTML', 'CSS', 'JavaScript', 'Wampserver', 'Bootstrap', 'Git/GitHub'],
-      duration: '4 weeks',
-      role: 'Full Stack Developer',
-      challenges: 'Handling complex inventory management, implementing role-based access',
-      lessons: 'Mastered e-commerce platform development and complex data relationships',
-      github: 'https://github.com/tho-mas12',
-    },
-    'Sports Day Registration': {
-      image: '/dept.png',
-      description: 'A web-based Sports Day Registration System for managing student registrations and sports events.',
-      fullDescription: `A modern Sports Day Registration System developed to simplify student participation and event management for school or college sports activities.
+    'Friday AI – AI Chatbot Application': {
+      image: '/Friday_ai.png',
+      description: 'Developed an AI-powered chatbot that enables real-time, human-like conversations through an interactive and responsive user interface.',
+      fullDescription: `An AI-driven assistant that processes and generates natural language responses in real-time, built with a clean and minimal frontend user interface.
 
 Features:
-- Student registration form
-- Sports event selection
-- Participant management
-- Responsive dashboard interface
-- User-friendly navigation
-- Form validation and data handling
-
-The System Includes:
-- Student details collection
-- Event registration management
-- Sports category selection
-- Team participation records
-- Registration status tracking
-- Responsive UI design
-
-Purpose:
-This project was created to improve the process of managing sports day activities digitally. It helped in understanding frontend development, responsive design, and user interaction handling using modern web technologies.`,
-      technologies: ['React.js', 'HTML5', 'CSS3', 'JavaScript', 'MongoDB', 'Bootstrap'],
+- Real-time conversation stream
+- Clean chat window with interactive, modern input states
+- Dynamic context-aware responses
+- Backend integration with Python and database management
+- Deployed on Vercel/Render for instant access`,
+      technologies: ['Python', 'HTML', 'CSS', 'JavaScript', 'Wampserver', 'Bootstrap', 'Git/GitHub'],
       duration: '4 weeks',
-      role: 'Full Stack Developer',
-      challenges: 'Creating responsive layouts, managing form validations, and designing an interactive user interface.',
-      lessons: 'Learned responsive web design, component-based frontend development, team collaboration using GitHub, and UI/UX improvement techniques.',
+      role: 'Frontend & API Integrator',
+      challenges: 'Handling real-time API latency and managing conversation history context effectively.',
+      lessons: 'Learned the fundamentals of API response integration, state management for conversation threads, and lightweight local server hosting.',
       github: 'https://github.com/tho-mas12',
     },
     'FrontierWox Tech Intern Management System': {
-  image: '/frontier.png',
-  description: 'A full-stack internship management system for managing interns, attendance, tasks, and team collaboration. https://frontier-wox-tech-intern.vercel.app/',
-  fullDescription: `A modern Internship Management System developed to simplify intern management, attendance tracking, task assignments, and team collaboration within an organization.
+      image: '/frontier.png',
+      description: 'A full-stack internship management system for managing interns, attendance, tasks, and team collaboration.',
+      fullDescription: `A complete enterprise portal for managing interns, tracking attendance, scheduling meetings, and reviewing daily tasks.
 
 Features:
-- Secure user authentication
-- Attendance management system
-- Daily task assignment
-- Team and leader management
-- Meeting scheduling system
-- Responsive dashboard interface
+- Secure JWT-based authentication
+- Daily task assignment and leaderboards
+- Real-time attendance check-in/check-out with break trackers
+- Meeting scheduling and role-based access control
+- Modern dashboards for administrators and interns`,
+      technologies: ['React.js', 'FastAPI', 'Python', 'MongoDB', 'JavaScript', 'CSS3', 'Vercel', 'Render'],
+      duration: '6 weeks',
+      role: 'Full Stack Developer',
+      challenges: 'Configuring multi-role dashboard routing, securing JWT storage, and debugging cross-origin (CORS) resource sharing between Vercel and Render.',
+      lessons: 'Deepened full-stack engineering skills, FastAPI route design, MongoDB queries, and setting up staging and production environments.',
+      github: 'https://github.com/tho-mas12',
+    },
+    'Sports Day Registration': {
+      image: '/SJC_sports.png',
+      description: 'A web-based Sports Day Registration System for managing student registrations and sports events.',
+      fullDescription: `A dynamic platform developed to streamline and manage event registrations for school and college sports activities.
 
-The System Includes:
-- Intern registration and login
-- Team management
-- Attendance and break tracking
-- Daily work assignment
-- Meeting attendance management
-- Role-based dashboard access
-
-Purpose:
-This project was created to improve internship workflow management digitally. It helped in understanding full-stack development, API integration, database management, authentication systems, and responsive UI design using modern web technologies.`,
-  technologies: ['React.js', 'FastAPI', 'Python', 'MongoDB', 'JavaScript', 'CSS3'],
-  duration: '6 weeks',
-  role: 'Full Stack Developer',
-  challenges: 'Implementing authentication, handling API integration, managing MongoDB data, and solving deployment and CORS issues.',
-  lessons: 'Learned full-stack web development, backend API creation, database integration, authentication handling, deployment using Vercel and Render, and debugging real-world application issues.',
-  github: 'https://github.com/tho-mas12',
-},
+Features:
+- Custom student registration forms
+- Event categorization and limit controls
+- Dynamic tracking dashboards
+- High performance MongoDB storage`,
+      technologies: ['React.js', 'HTML5', 'CSS3', 'JavaScript', 'MongoDB', 'Bootstrap'],
+      duration: '4 weeks',
+      role: 'Full Stack Developer (Intern)',
+      challenges: 'Validating registration boundaries and designing an intuitive, multi-step signup experience.',
+      lessons: 'Strengthened component architecture in React, state hooks, and database CRUD operations.',
+      github: 'https://github.com/tho-mas12',
+    }
   }
 
-  const details = projectDetails[project.title] || projectDetails.Portfolio
+  const details = projectDetails[project.title] || projectDetails['JIM Hostel management System']
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -181,7 +108,7 @@ This project was created to improve internship workflow management digitally. It
 
             <section className="detail-section">
               <h2>About This Project</h2>
-              <p>{details.fullDescription}</p>
+              <p style={{ whiteSpace: 'pre-wrap' }}>{details.fullDescription}</p>
             </section>
 
             <section className="detail-section">
@@ -206,7 +133,12 @@ This project was created to improve internship workflow management digitally. It
             </section>
 
             <div className="project-actions">
-              <a href={details.github} target="_blank" rel="noreferrer" className="button primary-button">
+              {project.liveUrl && (
+                <a href={project.liveUrl} target="_blank" rel="noreferrer" className="button primary-button">
+                  Visit Live Site ↗
+                </a>
+              )}
+              <a href={details.github} target="_blank" rel="noreferrer" className="button secondary-button">
                 View on GitHub
               </a>
               <button onClick={onClose} className="button secondary-button">
@@ -221,4 +153,3 @@ This project was created to improve internship workflow management digitally. It
 }
 
 export default ProjectDetailModal
-

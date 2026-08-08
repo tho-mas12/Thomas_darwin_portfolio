@@ -1,23 +1,25 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #80d1c557;
-  --surface: #fcfbff;
-  --border: #e5e4e7;
-  --accent: #8207e0;
-  --shadow: 0 24px 80px rgba(140, 104, 244, 0.14);
-  --shadow-sm: 0 16px 30px rgba(0, 0, 0, 0.08);
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --bg: #FAF9F6;
+  --surface: #ffffff;
+  --text: #4A4543;
+  --text-h: #1A1513;
+  --accent: #D96B43;
+  --accent-soft: rgba(217, 107, 67, 0.08);
+  --border: #EBE7E2;
+  --shadow: 0 24px 80px rgba(27, 24, 22, 0.04);
+  --shadow-sm: 0 16px 30px rgba(27, 24, 22, 0.02);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
   font-family: var(--sans);
   font-size: 16px;
-  line-height: 1.7;
-  letter-spacing: 0.15px;
+  line-height: 1.6;
   color: var(--text);
   background: var(--bg);
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -62,6 +64,10 @@ label {
 
 button {
   cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
 }
 
 @media (max-width: 640px) {
